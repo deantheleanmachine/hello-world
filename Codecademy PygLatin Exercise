@@ -1,0 +1,13 @@
+pyg = 'ay'          # to be added to the end of all strings
+
+original = raw_input('Enter a word:')
+
+if len(original) > 0 and original.isalpha():    # to ensure the field is not empty, and that all characters are from the alphabet.
+    word = original.lower()     # to change to lowercase
+    first = word[0]             # to take first character in string
+    new_word = word + first + pyg   # to concatenate string
+    new_word= new_word[1:len(new_word)]     # to remove first character from the string using its index [0] 
+    print new_word
+    
+else:
+    print 'empty'
