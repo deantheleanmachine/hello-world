@@ -1,0 +1,16 @@
+Here are some popular libraries you may find useful in scripting as a pentester:
+
+Request - simple HTTP library.
+Scapy - send, sniff, dissect and forge network packets
+Pwntools - a CTF & exploit development library.
+
+
+To import Datetime library and print current date & time:
+
+import datetime
+current_time = datetime.datetime.now()
+print(current_time)
+
+Python code output
+2021-08-05 20:38:13.113700
+
