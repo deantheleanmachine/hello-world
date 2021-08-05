@@ -3,3 +3,46 @@ def sayHello(name):
 
 sayHello("ben") # Output is: Hello Ben! Nice to meet you
 
+
+
+
+def calcCost(item):
+     if(item == "sweets"):
+          return 3.99
+     elif (item == "oranges"):
+          return 1.99
+     else:
+          return 0.99
+
+spent = 10
+spent = spent + calcCost("sweets")
+print("You have spent:" + str(spent))
+
+
+"""
+    In this project, you'll create a program that that tells
+    you when the value of your Bitcoin falls below $30,000.
+
+    You will need to:
+    - Create a function to convert Bitcoin to USD
+    - If your Bitcoin falls below $30,000 print a message.
+
+    You can assume that 1 Bitcoin is worth $40,000
+
+    ===> You've redeemed a hint. Replace the _'s with code to complete this exercise.
+
+"""
+
+investment_in_bitcoin = 1.2
+bitcoin_to_usd = 25000
+
+# 1) write a function to calculate bitcoin to usd
+def bitcoinToUSD(value_1, value_2):
+  usd_value = investment_in_bitcoin * bitcoin_to_usd
+  return usd_value
+
+investment_in_usd = bitcoinToUSD(investment_in_bitcoin, bitcoin_to_usd)
+if investment_in_usd <= 30000:
+  print("Investment below $30,000! SELL!")
+else:
+  print("Investment above $30,000")
